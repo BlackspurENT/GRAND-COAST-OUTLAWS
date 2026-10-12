@@ -3,191 +3,99 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Grand Coast Outlaws — Coming Soon</title>
-  <meta name="description" content="Grand Coast Outlaws is an upcoming open-world multiplayer project in development by Blackspur Entertainment.">
-  <meta name="theme-color" content="#08131f">
+  <meta name="theme-color" content="#070e1a">
+  <meta name="description" content="Grand Coast Outlaws. A new open-world multiplayer crime experience by Blackspur Entertainment. In development — coming soon.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Grand Coast Outlaws — Coming Soon">
+  <meta property="og:description" content="A vast coastal city. Two sides of the law. One world of possibility. An upcoming Unreal Engine 5 multiplayer project.">
+  <title>Grand Coast Outlaws — Coming Soon | Blackspur Entertainment</title>
+  <link rel="icon" href="assets/gco-mark.svg" type="image/svg+xml">
   <style>
     :root {
       color-scheme: dark;
-      --bg1: #08131f;
-      --bg2: #10263a;
-      --accent: #69e6d8;
-      --text: #f3f7fb;
-      --muted: #c8d5df;
-      --shadow: rgba(0, 0, 0, .45);
+      --white: #f6f7fa;
+      --muted: #c2cbd5;
+      --aqua: #9cf3e4;
+      --line: rgba(230, 243, 255, .18);
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    html, body {
-      width: 100%;
-      min-height: 100%;
-      font-family: Inter, Arial, Helvetica, sans-serif;
-      background: var(--bg1);
-      color: var(--text);
-    }
-    body {
+    body { margin: 0; background: #070e1a; color: var(--white); font-family: "Arial Narrow", "Segoe UI", Arial, sans-serif; }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid var(--aqua); outline-offset: 5px; }
+    .showcase {
+      min-height: 100vh;
       min-height: 100svh;
       position: relative;
-      overflow-x: hidden;
-      background:
-        radial-gradient(circle at 20% 20%, rgba(65,176,255,.16), transparent 32%),
-        radial-gradient(circle at 80% 25%, rgba(0,255,179,.10), transparent 28%),
-        radial-gradient(circle at 50% 80%, rgba(255,170,0,.08), transparent 35%),
-        linear-gradient(160deg, var(--bg2) 0%, var(--bg1) 55%, #050b12 100%);
+      display: grid;
+      grid-template-rows: auto minmax(340px, 1fr) auto;
+      overflow: hidden;
+      isolation: isolate;
+      background: #0b1a29 url("assets/coastal-city-concept.svg") center 43% / cover no-repeat;
     }
-    body::before {
+    .showcase::before {
       content: "";
-      position: fixed;
+      position: absolute;
+      z-index: -1;
       inset: 0;
       background:
-        linear-gradient(to top, rgba(0,0,0,.70) 0%, rgba(0,0,0,.18) 40%, rgba(0,0,0,.12) 100%),
-        repeating-linear-gradient(90deg, transparent 0 38px, rgba(255,255,255,.02) 39px 40px);
-      pointer-events: none;
+        linear-gradient(180deg, rgba(4, 10, 20, .48) 0%, rgba(4, 10, 20, .18) 23%, rgba(5, 12, 22, .35) 53%, rgba(4, 9, 17, .82) 79%, #060b13 100%),
+        linear-gradient(90deg, rgba(4, 9, 20, .34), transparent 30%, transparent 70%, rgba(4, 9, 20, .25));
     }
-    .city-glow {
-      position: fixed;
-      inset: auto 0 0 0;
-      height: 38vh;
-      background:
-        radial-gradient(circle at 15% 100%, rgba(50,160,255,.18), transparent 28%),
-        radial-gradient(circle at 50% 100%, rgba(0,255,204,.12), transparent 25%),
-        radial-gradient(circle at 85% 100%, rgba(255,160,40,.14), transparent 28%);
-      filter: blur(8px);
-      opacity: .95;
-      pointer-events: none;
+    .topbar { padding: clamp(23px, 3.8vw, 56px) clamp(22px, 5vw, 92px); display: flex; justify-content: center; }
+    .studio { text-transform: uppercase; letter-spacing: .3em; text-align: center; font-size: 12px; font-weight: 800; text-shadow: 0 2px 18px #000; }
+    .studio strong { color: var(--aqua); }
+    .hero { display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 25px 20px 40px; }
+    .overline { font-size: clamp(10px, 1.15vw, 13px); font-weight: 700; text-transform: uppercase; letter-spacing: .34em; color: #d4f0f1; margin: 0 0 19px; text-shadow: 0 2px 12px #000; }
+    h1 { margin: 0; font-size: clamp(57px, 11vw, 176px); font-weight: 1000; font-stretch: condensed; text-transform: uppercase; line-height: .82; letter-spacing: -.07em; text-shadow: 0 8px 48px rgba(0,0,0,.6); }
+    h1 span { display: block; }
+    h1 span:nth-child(2) { color: var(--aqua); }
+    .tagline { margin: 27px 0 0; font-size: clamp(11px, 1.35vw, 17px); text-transform: uppercase; letter-spacing: .24em; font-weight: 600; text-shadow: 0 2px 16px #000; }
+    .bottom { text-align: center; padding: 0 22px clamp(24px, 5vh, 66px); }
+    .coming { display: block; margin-bottom: 17px; color: var(--white); font-size: clamp(28px, 5.2vw, 62px); font-weight: 900; text-transform: uppercase; letter-spacing: .18em; text-shadow: 0 3px 24px #000; }
+    .rule { width: min(168px, 35vw); height: 2px; margin: 0 auto 21px; background: linear-gradient(90deg, transparent, var(--aqua), transparent); }
+    .about-heading { font-size: 12px; text-transform: uppercase; letter-spacing: .25em; margin: 0 0 13px; color: var(--aqua); font-weight: 800; }
+    .description { max-width: 790px; margin: auto; line-height: 1.75; font-size: clamp(14px, 1.35vw, 17px); color: var(--muted); text-wrap: pretty; }
+    .fineprint { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px 18px; margin-top: 26px; color: #92a1ad; font-size: 11px; letter-spacing: .06em; }
+    .fineprint span + span::before { content: "•"; margin-right: 17px; color: #94b6bb; }
+    @media (max-width: 690px) {
+      .showcase { background-position: 55% center; grid-template-rows: auto 1fr auto; }
+      .studio { letter-spacing: .21em; font-size: 10px; }
+      .overline { letter-spacing: .2em; }
+      h1 { font-size: clamp(59px, 13.2vw, 102px); }
+      .tagline { letter-spacing: .12em; margin-top: 20px; }
+      .hero { padding-top: 45px; padding-bottom: 55px; }
+      .bottom { padding-left: 20px; padding-right: 20px; }
+      .fineprint span + span::before { display: none; }
     }
-    .page {
-      position: relative;
-      z-index: 1;
-      min-height: 100svh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 42px 28px 34px;
+    @media (max-height: 680px) {
+      .showcase { min-height: 700px; }
     }
-    .top { display: flex; justify-content: center; align-items: center; }
-    .brand {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .28em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,.82);
-      text-align: center;
-    }
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      flex: 1;
-      padding: 65px 16px;
-    }
-    .eyebrow {
-      font-size: 13px;
-      letter-spacing: .24em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 18px;
-      text-shadow: 0 0 18px rgba(105,230,216,.20);
-    }
-    h1 {
-      font-size: clamp(42px, 9vw, 108px);
-      font-weight: 900;
-      line-height: .94;
-      letter-spacing: -.05em;
-      text-transform: uppercase;
-      max-width: 980px;
-      text-shadow: 0 12px 30px var(--shadow);
-      text-wrap: balance;
-    }
-    .subtitle {
-      margin-top: 18px;
-      font-size: clamp(15px, 2.2vw, 28px);
-      color: rgba(255,255,255,.90);
-      letter-spacing: .18em;
-      text-transform: uppercase;
-    }
-    .soon {
-      margin-top: 26px;
-      display: inline-block;
-      padding: 12px 22px;
-      border: 1px solid rgba(255,255,255,.18);
-      background: rgba(10,18,28,.42);
-      backdrop-filter: blur(10px);
-      border-radius: 999px;
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      color: var(--accent);
-      box-shadow: 0 10px 30px rgba(0,0,0,.28);
-    }
-    .bottom { width: 100%; display: flex; justify-content: center; }
-    .description {
-      width: min(900px, 100%);
-      text-align: center;
-      padding: 22px 22px 10px;
-      background: linear-gradient(180deg, rgba(9,18,29,.18), rgba(9,18,29,.48));
-      border-top: 1px solid rgba(255,255,255,.08);
-      border-radius: 18px 18px 0 0;
-      backdrop-filter: blur(8px);
-    }
-    .description h2 {
-      font-size: 18px;
-      margin-bottom: 12px;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,.95);
-    }
-    .description p {
-      font-size: 15px;
-      line-height: 1.75;
-      color: var(--muted);
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    .small-note {
-      margin-top: 14px;
-      font-size: 12px;
-      color: rgba(255,255,255,.54);
-      letter-spacing: .04em;
-    }
-    @media (max-width: 640px) {
-      .page { padding: 24px 18px 22px; }
-      .hero { padding: 65px 4px; }
-      .description { padding: 18px 14px 8px; }
-      .description p { font-size: 14px; line-height: 1.65; }
-      .eyebrow { font-size: 11px; }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero { animation: appear .9s ease both; }
+      @keyframes appear { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
     }
   </style>
 </head>
 <body>
-  <div class="city-glow" aria-hidden="true"></div>
-  <div class="page">
-    <header class="top">
-      <div class="brand">Blackspur Entertainment</div>
-    </header>
-    <main class="hero">
-      <div class="eyebrow">Open-World Multiplayer Project</div>
-      <h1>Grand Coast Outlaws</h1>
-      <div class="subtitle">A Coastal Crime Experience</div>
-      <div class="soon">Coming Soon!</div>
-    </main>
+  <main class="showcase">
+    <header class="topbar"><div class="studio">BLACKSPUR <strong>ENTERTAINMENT</strong></div></header>
+    <section class="hero" aria-labelledby="game-title">
+      <p class="overline">A new open-world multiplayer project</p>
+      <h1 id="game-title"><span>Grand Coast</span><span>Outlaws</span></h1>
+      <p class="tagline">One city. Two sides of the law.</p>
+    </section>
     <footer class="bottom">
-      <section class="description" aria-label="About the Game">
-        <h2>About the Game</h2>
-        <p>
-          Grand Coast Outlaws (GCO) is an ambitious open-world multiplayer game in development,
-          built with Unreal Engine 5 and C++. Set in a large fictional coastal metropolis, the
-          project focuses on police and criminal gameplay, vehicles, heists, dynamic city life,
-          and an expanding online world shaped by action, risk, and freedom.
-        </p>
-        <div class="small-note">
-          Early showcase page — more content, screenshots, and updates will be added soon.
-        </div>
-      </section>
+      <strong class="coming">Coming Soon!</strong>
+      <div class="rule" aria-hidden="true"></div>
+      <h2 class="about-heading">About the game</h2>
+      <p class="description">Grand Coast Outlaws (GCO) is an ambitious open-world multiplayer game in development with Unreal Engine 5 and C++. Explore the vision of a sprawling coastal metropolis where police and outlaws collide, with vehicles, pursuits, heists and the freedom to forge your own story.</p>
+      <div class="fineprint">
+        <span>© 2026 Blackspur Entertainment</span>
+        <span>In development — release date not announced</span>
+        <span>Illustrated concept background — not gameplay footage</span>
+      </div>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
