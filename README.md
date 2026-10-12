@@ -1,51 +1,61 @@
 # GRAND COAST OUTLAWS
 
-### An open-world multiplayer game in development
+### An independent Unreal Engine 5 multiplayer project by Blackspur Entertainment
 
-**Grand Coast Outlaws (GCO)** is an independent open-world action multiplayer project being developed with **Unreal Engine 5 and C++** under the **Blackspur Entertainment** name.
+**Grand Coast Outlaws (GCO)** is an open-world action multiplayer game in **early development**. Its long-term ambition is a fictional coastal metropolis combining police, criminal and civilian experiences, vehicles, pursuits and heists.
 
-The long-term vision is a living fictional coastal metropolis with varied districts, police and criminal gameplay, vehicles, pursuits, heists and online experiences.
+> **Current stage:** internal prototype. No public playable build, validated production dedicated-server package or release date has been announced.
 
-> **Development stage: early prototype.** The full open world and gameplay loop are not yet complete, and there is no public release date.
+## Explore GCO
 
-## Development progress
-
-Internal development work currently includes:
-
-- A compiling Unreal Engine Development Editor foundation and early C++ gameplay modules.
-- Coastal district blockout and in-engine main-menu prototypes.
-- Early roles, movement and multiplayer replication tested in a limited two-player editor listen-server setup.
-- Build scripts and validation tooling to help reproduce and verify technical milestones.
-
-These are internal prototype milestones, not a released game or proof of a production dedicated-server build.
-
-**[Read the detailed development status →](docs/DEVELOPMENT_STATUS.md)**
-
-## Roadmap
-
-| Milestone | Status |
+| Resource | What you will find |
 | --- | --- |
-| Unreal/C++ architecture foundation | Initial prototype |
-| Basic in-engine menu and world blockout | Prototype work |
-| Local multiplayer role/movement tests | Limited tests completed |
-| Playable district with cohesive game loop | In development |
-| Deployable dedicated game server and hosting benchmarks | Not yet validated |
-| Expanded world, vehicles, heists and progression | Planned |
-| Public release | Not announced |
+| [Public presentation website source](index.html) | Responsive landing-page design; needs GitHub Pages activation to become a live site |
+| [Development status](docs/DEVELOPMENT_STATUS.md) | Confirmed internal engineering milestones and limitations |
+| [Development roadmap](docs/ROADMAP.md) | Phased objectives and clear criteria for completion |
+| [Public updates](docs/UPDATES.md) | Dated, evidence-oriented progress history |
+| [Partner overview](docs/PARTNER_OVERVIEW.md) | Scope, collaboration model and technical discussion points |
+| [Hosting evaluation](docs/HOSTING_EVALUATION.md) | Deployment artifact requirements, test procedure and measurements |
+| [Media and demos](docs/MEDIA.md) | Planned screenshot gallery and visual accuracy guidelines |
 
-## Technical collaborations
+## Engineering progress
 
-Blackspur Entertainment welcomes technical conversations with game hosting providers, infrastructure teams and development technology partners.
+The current internal records, last comprehensively reviewed on **6 October 2026**, describe:
 
-The next practical evaluation target is a small playable multiplayer demo, followed by a reproducible Unreal dedicated-server deployment, client connection tests and performance measurements.
+- Unreal Engine Development Editor build completed for the initial C++ foundation.
+- Seven early Unreal modules, including gameplay framework and user interface foundations.
+- Initial coastal district blockout and menu maps generated with in-engine tools.
+- Working prototype menu presentation and a limited two-player local PIE listen-server test.
+- Internal test utilities and build validation processes.
 
-This repository is intended for **approved presentation materials, factual progress updates and eventually verified screenshots or demos**. Source code and Unreal project assets are kept in a separate, private development repository.
+These are **prototype development results**, not evidence of a completed open world, full heist systems, live production multiplayer service or performance at scale.
 
-## Media and accuracy
+## Development milestones
 
-Any future visuals will be clearly identified as **in-engine prototype captures**, **development screenshots**, or **concept artwork**. Design goals are not presented as already-shipped features.
+| Stage | Status |
+| --- | --- |
+| Unreal/C++ technical foundation | Initial prototype reported |
+| Small playable online district | In development |
+| Independently hosted dedicated server and repeatable benchmarks | Not yet validated |
+| Vehicles, heists, wanted/bounty loop and persistent progression | Planned |
+| Expanded world, art and optimization | Planned |
+| Public distribution | Not announced |
+
+For precise acceptance criteria and remaining work, see the [roadmap](docs/ROADMAP.md).
+
+## Technical partnerships
+
+Blackspur Entertainment welcomes exploratory conversations with infrastructure providers and game technology partners. The preferred approach is to test a **small, verifiable multiplayer demo**, then validate a real dedicated-server artifact and share repeatable technical measurements before considering production-scale hosting.
+
+Read the [partner overview](docs/PARTNER_OVERVIEW.md) and [hosting evaluation brief](docs/HOSTING_EVALUATION.md). No provider is described here as a confirmed sponsor without an explicit agreement.
+
+## Public vs private development
+
+This public repository is reserved for approved documentation, truthful updates and eventually reviewed screenshots/demos. The active Unreal Engine source code, project assets and engineering work remain in a separate private repository.
+
+Concept artwork, if published, will be clearly distinguished from actual in-engine captures. No unverified feature is presented as completed gameplay.
 
 ---
 
 **Blackspur Entertainment** · **Grand Coast Outlaws (GCO)**  
-Public development showcase · Last updated 12 October 2026
+Public development showcase · 12 October 2026
