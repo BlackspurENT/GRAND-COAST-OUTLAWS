@@ -1,87 +1,193 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#08121d">
-<meta name="description" content="Grand Coast Outlaws is an Unreal Engine 5 multiplayer game project in early development by Blackspur Entertainment. Explore verified progress, roadmap and technical partnership information.">
-<title>Grand Coast Outlaws — Blackspur Entertainment</title>
-<style>
-:root{color-scheme:dark;--bg:#08121d;--ink:#eaf4f7;--muted:#9db0bd;--teal:#62e5d0;--line:#2a4350;--panel:#101e2c}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
-a{color:inherit}a:focus-visible{outline:3px solid var(--teal);outline-offset:4px}
-.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.top{position:sticky;top:0;z-index:10;background:#08121deb;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
-.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;min-height:74px}
-.brand{font-weight:900;font-size:13px;letter-spacing:.16em;text-decoration:none}.brand span{color:var(--teal)}
-nav{display:flex;gap:22px;flex-wrap:wrap}nav a{font-size:13px;color:var(--muted);text-decoration:none}nav a:hover{color:var(--teal)}
-.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);padding:120px 0 112px;background:radial-gradient(ellipse at 85% 25%,#20645d59,transparent 48%),linear-gradient(155deg,#0c1f32,#08121d 65%)}
-.hero:after{content:"";position:absolute;right:-8%;bottom:-45%;width:60%;height:120%;transform:rotate(-18deg);background:repeating-linear-gradient(90deg,transparent 0 37px,#62e5d00c 38px 40px);pointer-events:none}
-.hero .wrap{position:relative;z-index:1}.eyebrow{color:var(--teal);font-size:12px;letter-spacing:.22em;font-weight:800;text-transform:uppercase}
-h1{font-size:clamp(52px,9vw,118px);line-height:.98;letter-spacing:-.065em;max-width:850px;margin:20px 0 28px}
-h1 span{display:block;color:var(--teal)}
-.lead{font-size:clamp(18px,2.1vw,23px);max-width:720px;color:#c6d8df;line-height:1.6}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:38px}.btn{display:inline-block;border:1px solid #5ddfcd;background:var(--teal);color:#06171a;padding:12px 20px;font-size:14px;font-weight:800;text-decoration:none;border-radius:6px}
-.btn.secondary{color:var(--ink);background:transparent;border-color:#668392}.btn:hover{filter:brightness(1.12)}
-.note{color:var(--muted);font-size:12px;margin-top:25px;max-width:740px}
-section{padding:86px 0}h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.04em;line-height:1.1;margin:12px 0 18px}
-section p.intro{color:var(--muted);max-width:740px;margin:0 0 30px}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.panel{background:linear-gradient(160deg,#142838,#0c1926);border:1px solid var(--line);border-radius:10px;padding:26px}
-.num{font:900 13px/1 system-ui;color:var(--teal);letter-spacing:.15em}.panel h3{font-size:21px;margin:18px 0 12px;letter-spacing:-.03em}
-.panel p{color:var(--muted);font-size:14px;margin:0}.status{display:inline-block;margin-top:20px;padding:5px 10px;font-size:11px;letter-spacing:.07em;text-transform:uppercase;background:#284b4b;color:#b8f7ea;border-radius:3px}
-.status.pending{background:#303b49;color:#ced9e7}
-.band{background:#0e202d;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.road{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step{border-left:2px solid var(--line);padding:8px 16px}
-.step strong{font-size:15px}.step small{display:block;color:var(--teal);text-transform:uppercase;letter-spacing:.07em;margin:7px 0}
-.step p{font-size:13px;color:var(--muted);margin:6px 0}
-.links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.links a{display:block;padding:23px;border:1px solid var(--line);background:var(--panel);text-decoration:none;border-radius:8px;transition:border-color .2s}
-.links a:hover{border-color:var(--teal)}.links b{display:block;font-size:17px}.links span{display:block;color:var(--muted);font-size:13px;margin-top:7px}
-footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:13px}.footerrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:800px){.grid{grid-template-columns:1fr}.road{grid-template-columns:repeat(2,1fr)}.hero{padding:75px 0}.top .wrap{align-items:flex-start;flex-direction:column;padding:17px 0;gap:8px}}
-@media(max-width:520px){.links,.road{grid-template-columns:1fr}nav{gap:12px}section{padding:58px 0}.hero{padding:62px 0}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grand Coast Outlaws — Coming Soon</title>
+  <meta name="description" content="Grand Coast Outlaws is an upcoming open-world multiplayer project in development by Blackspur Entertainment.">
+  <meta name="theme-color" content="#08131f">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg1: #08131f;
+      --bg2: #10263a;
+      --accent: #69e6d8;
+      --text: #f3f7fb;
+      --muted: #c8d5df;
+      --shadow: rgba(0, 0, 0, .45);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: var(--bg1);
+      color: var(--text);
+    }
+    body {
+      min-height: 100svh;
+      position: relative;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(65,176,255,.16), transparent 32%),
+        radial-gradient(circle at 80% 25%, rgba(0,255,179,.10), transparent 28%),
+        radial-gradient(circle at 50% 80%, rgba(255,170,0,.08), transparent 35%),
+        linear-gradient(160deg, var(--bg2) 0%, var(--bg1) 55%, #050b12 100%);
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        linear-gradient(to top, rgba(0,0,0,.70) 0%, rgba(0,0,0,.18) 40%, rgba(0,0,0,.12) 100%),
+        repeating-linear-gradient(90deg, transparent 0 38px, rgba(255,255,255,.02) 39px 40px);
+      pointer-events: none;
+    }
+    .city-glow {
+      position: fixed;
+      inset: auto 0 0 0;
+      height: 38vh;
+      background:
+        radial-gradient(circle at 15% 100%, rgba(50,160,255,.18), transparent 28%),
+        radial-gradient(circle at 50% 100%, rgba(0,255,204,.12), transparent 25%),
+        radial-gradient(circle at 85% 100%, rgba(255,160,40,.14), transparent 28%);
+      filter: blur(8px);
+      opacity: .95;
+      pointer-events: none;
+    }
+    .page {
+      position: relative;
+      z-index: 1;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 42px 28px 34px;
+    }
+    .top { display: flex; justify-content: center; align-items: center; }
+    .brand {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.82);
+      text-align: center;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex: 1;
+      padding: 65px 16px;
+    }
+    .eyebrow {
+      font-size: 13px;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+      text-shadow: 0 0 18px rgba(105,230,216,.20);
+    }
+    h1 {
+      font-size: clamp(42px, 9vw, 108px);
+      font-weight: 900;
+      line-height: .94;
+      letter-spacing: -.05em;
+      text-transform: uppercase;
+      max-width: 980px;
+      text-shadow: 0 12px 30px var(--shadow);
+      text-wrap: balance;
+    }
+    .subtitle {
+      margin-top: 18px;
+      font-size: clamp(15px, 2.2vw, 28px);
+      color: rgba(255,255,255,.90);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .soon {
+      margin-top: 26px;
+      display: inline-block;
+      padding: 12px 22px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(10,18,28,.42);
+      backdrop-filter: blur(10px);
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      box-shadow: 0 10px 30px rgba(0,0,0,.28);
+    }
+    .bottom { width: 100%; display: flex; justify-content: center; }
+    .description {
+      width: min(900px, 100%);
+      text-align: center;
+      padding: 22px 22px 10px;
+      background: linear-gradient(180deg, rgba(9,18,29,.18), rgba(9,18,29,.48));
+      border-top: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px 18px 0 0;
+      backdrop-filter: blur(8px);
+    }
+    .description h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.95);
+    }
+    .description p {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--muted);
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .small-note {
+      margin-top: 14px;
+      font-size: 12px;
+      color: rgba(255,255,255,.54);
+      letter-spacing: .04em;
+    }
+    @media (max-width: 640px) {
+      .page { padding: 24px 18px 22px; }
+      .hero { padding: 65px 4px; }
+      .description { padding: 18px 14px 8px; }
+      .description p { font-size: 14px; line-height: 1.65; }
+      .eyebrow { font-size: 11px; }
+    }
+  </style>
 </head>
 <body>
-<header class="top"><div class="wrap">
-<a class="brand" href="#top">BLACKSPUR <span>ENTERTAINMENT</span></a>
-<nav aria-label="Main navigation"><a href="#project">Project</a><a href="#progress">Development</a><a href="#partners">Partners</a><a href="https://github.com/BlackspurENT/GRAND-COAST-OUTLAWS">GitHub ↗</a></nav>
-</div></header>
-<main id="top">
-<div class="hero"><div class="wrap">
-<div class="eyebrow">An open-world multiplayer game in development</div>
-<h1>GRAND COAST <span>OUTLAWS.</span></h1>
-<p class="lead">A fictional coastal metropolis. Competing ambitions. Police, criminals and an evolving online world — the vision behind an independent Unreal Engine 5 project.</p>
-<div class="actions"><a class="btn" href="#progress">Explore development</a><a class="btn secondary" href="#partners">Technical partnerships</a></div>
-<p class="note">EARLY PROTOTYPE · Not a playable release · Visual layout is editorial graphic design, not a gameplay capture. No public launch date has been announced.</p>
-</div></div>
-<section id="project"><div class="wrap">
-<div class="eyebrow">The vision</div><h2>Built for a living coastal world.</h2>
-<p class="intro">GCO is being developed with Unreal Engine 5 and C++. The long-term design aims at a vast open world and connected gameplay systems. The full vision is not implemented yet; the current priority is a credible, playable first district.</p>
-<div class="grid">
-<div class="panel"><span class="num">01 / WORLD</span><h3>Coastal metropolis</h3><p>Distinct districts, waterfronts and city spaces, first validated as small playable environments.</p><span class="status pending">Blockout prototype</span></div>
-<div class="panel"><span class="num">02 / GAMEPLAY</span><h3>Police &amp; outlaws</h3><p>Roles, pursuits and eventually complete heist gameplay. Early role and replication foundations have been tested locally.</p><span class="status pending">Early systems</span></div>
-<div class="panel"><span class="num">03 / ONLINE</span><h3>Shared sessions</h3><p>Server-authoritative mechanics are a long-term objective. A production dedicated-server deployment has not yet been validated.</p><span class="status pending">Testing stage</span></div>
-</div></div></section>
-<section class="band" id="progress"><div class="wrap">
-<div class="eyebrow">Development transparency</div><h2>From prototype to proof.</h2>
-<p class="intro">Internal records report a successful Unreal Editor compilation, an early menu and world blockout, and limited two-player PIE listen-server tests. These are component-level steps, not a finished online game.</p>
-<div class="road">
-<div class="step"><strong>Foundation</strong><small>Prototype reported</small><p>UE editor build, initial C++ systems and test tools.</p></div>
-<div class="step"><strong>Playable district</strong><small>In development</small><p>A small gameplay loop with independently launched clients.</p></div>
-<div class="step"><strong>Dedicated server</strong><small>Not yet validated</small><p>Reproducible deployment, remote connectivity and measured hosting load.</p></div>
-<div class="step"><strong>Expanded world</strong><small>Planned</small><p>Vehicles, heists, progression, visual polish and scale.</p></div>
-</div>
-<div class="actions"><a class="btn secondary" href="docs/DEVELOPMENT_STATUS.md">Current status</a><a class="btn secondary" href="docs/ROADMAP.md">Full roadmap</a><a class="btn secondary" href="docs/UPDATES.md">Development updates</a></div>
-</div></section>
-<section id="partners"><div class="wrap">
-<div class="eyebrow">Infrastructure &amp; collaboration</div><h2>A technical conversation, not a promise.</h2>
-<p class="intro">We welcome conversations with hosting platforms and development technology providers. Our next meaningful evaluation is a small, reproducible multiplayer demo followed by a verified Unreal dedicated-server artifact and measurable deployment tests.</p>
-<div class="links">
-<a href="docs/PARTNER_OVERVIEW.md"><b>Partner overview ↗</b><span>Project scope, collaboration model and transparency commitments.</span></a>
-<a href="docs/HOSTING_EVALUATION.md"><b>Hosting evaluation ↗</b><span>Build packaging, client connectivity, trial conditions and benchmark gates.</span></a>
-<a href="docs/MEDIA.md"><b>Media &amp; demos ↗</b><span>How actual engine captures and concepts will be identified and reviewed.</span></a>
-<a href="https://github.com/BlackspurENT/GRAND-COAST-OUTLAWS"><b>Public GitHub ↗</b><span>Reviewed progress summaries; no private Unreal code or licensed assets.</span></a>
-</div>
-</div></section>
-</main>
-<footer><div class="wrap footerrow"><span>© 2026 Blackspur Entertainment · Grand Coast Outlaws</span><span>Independent development project · Updated 12 October 2026</span></div></footer>
-</body></html>
+  <div class="city-glow" aria-hidden="true"></div>
+  <div class="page">
+    <header class="top">
+      <div class="brand">Blackspur Entertainment</div>
+    </header>
+    <main class="hero">
+      <div class="eyebrow">Open-World Multiplayer Project</div>
+      <h1>Grand Coast Outlaws</h1>
+      <div class="subtitle">A Coastal Crime Experience</div>
+      <div class="soon">Coming Soon!</div>
+    </main>
+    <footer class="bottom">
+      <section class="description" aria-label="About the Game">
+        <h2>About the Game</h2>
+        <p>
+          Grand Coast Outlaws (GCO) is an ambitious open-world multiplayer game in development,
+          built with Unreal Engine 5 and C++. Set in a large fictional coastal metropolis, the
+          project focuses on police and criminal gameplay, vehicles, heists, dynamic city life,
+          and an expanding online world shaped by action, risk, and freedom.
+        </p>
+        <div class="small-note">
+          Early showcase page — more content, screenshots, and updates will be added soon.
+        </div>
+      </section>
+    </footer>
+  </div>
+</body>
+</html>
