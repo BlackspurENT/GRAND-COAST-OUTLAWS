@@ -1,30 +1,53 @@
-# Grand Coast Outlaws — Media & Demo Gallery
+# GRAND COAST OUTLAWS — MEDIA & CONCEPT GALLERY
 
-**Public media status:** No images or playable demo files are published in this gallery yet.
+The gallery below contains **original illustrated project concept artworks**. These are **NOT screenshots from a running Unreal Engine build**. The work explores locations, atmosphere and presentation for Grand Coast Outlaws; it does not prove any game location, vehicle or mechanic is finished.
 
-The absence of a screenshot here does **not** mean an in-engine build does not exist; it means that no capture has been reviewed and approved for public release through this repository.
+## Visual concepts in the public repository
 
-## Upcoming gallery categories
+### Downtown / after dark
 
-| Label | Meaning | Publication requirement |
+![Grand Coast downtown concept artwork](../assets/gco-downtown-concept.svg)
+
+A visual study of the imagined city's dense downtown, illuminated street corridors and late-night vehicle pursuits. **Type:** concept art.
+
+### Islands / coastline
+
+![Grand Coast islands and coastline concept artwork](../assets/gco-coast-concept.svg)
+
+An aerial visual study of coastal terrain, shore roads, water routes and islands. **Type:** concept art.
+
+### Harbor / airfield
+
+![Grand Coast industrial harbor and airfield concept artwork](../assets/gco-harbor-concept.svg)
+
+An industrial waterfront, cargo infrastructure and aviation silhouette. **Type:** concept art.
+
+### Initial skyline exploration
+
+![Grand Coast stylized coastal city concept artwork](../assets/coastal-city-concept.svg)
+
+An earlier illustrated background exploring coastal skylines at dusk. **Type:** concept art.
+
+## What is not published here
+
+The project has discussed menu layouts, brand animation, panoramas and cinematic illustrations in development conversations. They are not presented here as verified screenshots or live gameplay. Publication of external render files requires an intentional selection, a transferable approved image file and a license/privacy check.
+
+**Confirmed public in-engine screenshot gallery:** not yet published.  
+**Public game build / downloadable demo:** not available.  
+**Official gameplay trailer:** not announced.
+
+## Media categories
+
+| Type | What it means | Publication rule |
 | --- | --- | --- |
-| **In-engine prototype** | A real capture rendered by a running Unreal build | Version/date and clear prototype context |
-| **Development screenshot** | Actual editor/runtime work-in-progress | Permission to share and no sensitive overlays |
-| **Concept art** | Visual exploration, including generated ideas | Must never be labelled as gameplay |
-| **Technical demo** | Repeatable playback or playable test artifact | Environment, setup and limitations documented |
-| **Benchmark result** | Measurements from a defined test scenario | Hardware, build, test load and methodology |
+| Concept art | Illustration, design exploration or previsualization | Must say `concept art` |
+| UI concept | Proposed menu or HUD appearance | Must not imply every button or feature is implemented |
+| In-engine prototype | Actual frame captured from a running UE build | Record capture date, build and prototype status |
+| Development capture | Actual editor or test-session screen | Remove private debug data and identify WIP state |
+| Gameplay demo | Actual recorded interaction with a running game | Describe test scope and known limitations |
 
-## Approval checklist
+## Before adding real images
 
-Before adding media to this public repository:
+Verify ownership and permitted distribution; check embedded metadata and visible private information; compress assets for web delivery; and preserve accurate labels. When real gameplay screenshots are ready, they will appear here in a separate section rather than replacing concept labels.
 
-1. Confirm that the file is intentionally approved for public distribution.
-2. Confirm asset licensing and attribution, including third-party content.
-3. Remove user identifiers, internal server details, tokens, debug consoles and private paths.
-4. Check image metadata and embedded document information.
-5. Label concepts honestly and retain originals for reproducible in-engine captures.
-6. Check size and format; avoid dumping entire Unreal Content directories into the public repository.
-
-**Future media will be linked here only after verification.**
-
-[Public project overview](../README.md) · [Development status](DEVELOPMENT_STATUS.md)
+[Back to project overview](../README.md) · [Development status](DEVELOPMENT_STATUS.md)
