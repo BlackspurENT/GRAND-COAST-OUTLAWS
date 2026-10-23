@@ -1,101 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070e1a">
-  <meta name="description" content="Grand Coast Outlaws. A new open-world multiplayer crime experience by Blackspur Entertainment. In development — coming soon.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Grand Coast Outlaws — Coming Soon">
-  <meta property="og:description" content="A vast coastal city. Two sides of the law. One world of possibility. An upcoming Unreal Engine 5 multiplayer project.">
-  <title>Grand Coast Outlaws — Coming Soon | Blackspur Entertainment</title>
-  <link rel="icon" href="assets/gco-mark.svg" type="image/svg+xml">
-  <style>
-    :root {
-      color-scheme: dark;
-      --white: #f6f7fa;
-      --muted: #c2cbd5;
-      --aqua: #9cf3e4;
-      --line: rgba(230, 243, 255, .18);
-    }
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; background: #070e1a; color: var(--white); font-family: "Arial Narrow", "Segoe UI", Arial, sans-serif; }
-    a { color: inherit; }
-    a:focus-visible { outline: 3px solid var(--aqua); outline-offset: 5px; }
-    .showcase {
-      min-height: 100vh;
-      min-height: 100svh;
-      position: relative;
-      display: grid;
-      grid-template-rows: auto minmax(340px, 1fr) auto;
-      overflow: hidden;
-      isolation: isolate;
-      background: #0b1a29 url("assets/coastal-city-concept.svg") center 43% / cover no-repeat;
-    }
-    .showcase::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      inset: 0;
-      background:
-        linear-gradient(180deg, rgba(4, 10, 20, .48) 0%, rgba(4, 10, 20, .18) 23%, rgba(5, 12, 22, .35) 53%, rgba(4, 9, 17, .82) 79%, #060b13 100%),
-        linear-gradient(90deg, rgba(4, 9, 20, .34), transparent 30%, transparent 70%, rgba(4, 9, 20, .25));
-    }
-    .topbar { padding: clamp(23px, 3.8vw, 56px) clamp(22px, 5vw, 92px); display: flex; justify-content: center; }
-    .studio { text-transform: uppercase; letter-spacing: .3em; text-align: center; font-size: 12px; font-weight: 800; text-shadow: 0 2px 18px #000; }
-    .studio strong { color: var(--aqua); }
-    .hero { display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 25px 20px 40px; }
-    .overline { font-size: clamp(10px, 1.15vw, 13px); font-weight: 700; text-transform: uppercase; letter-spacing: .34em; color: #d4f0f1; margin: 0 0 19px; text-shadow: 0 2px 12px #000; }
-    h1 { margin: 0; font-size: clamp(57px, 11vw, 176px); font-weight: 1000; font-stretch: condensed; text-transform: uppercase; line-height: .82; letter-spacing: -.07em; text-shadow: 0 8px 48px rgba(0,0,0,.6); }
-    h1 span { display: block; }
-    h1 span:nth-child(2) { color: var(--aqua); }
-    .tagline { margin: 27px 0 0; font-size: clamp(11px, 1.35vw, 17px); text-transform: uppercase; letter-spacing: .24em; font-weight: 600; text-shadow: 0 2px 16px #000; }
-    .bottom { text-align: center; padding: 0 22px clamp(24px, 5vh, 66px); }
-    .coming { display: block; margin-bottom: 17px; color: var(--white); font-size: clamp(28px, 5.2vw, 62px); font-weight: 900; text-transform: uppercase; letter-spacing: .18em; text-shadow: 0 3px 24px #000; }
-    .rule { width: min(168px, 35vw); height: 2px; margin: 0 auto 21px; background: linear-gradient(90deg, transparent, var(--aqua), transparent); }
-    .about-heading { font-size: 12px; text-transform: uppercase; letter-spacing: .25em; margin: 0 0 13px; color: var(--aqua); font-weight: 800; }
-    .description { max-width: 790px; margin: auto; line-height: 1.75; font-size: clamp(14px, 1.35vw, 17px); color: var(--muted); text-wrap: pretty; }
-    .fineprint { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px 18px; margin-top: 26px; color: #92a1ad; font-size: 11px; letter-spacing: .06em; }
-    .fineprint span + span::before { content: "•"; margin-right: 17px; color: #94b6bb; }
-    @media (max-width: 690px) {
-      .showcase { background-position: 55% center; grid-template-rows: auto 1fr auto; }
-      .studio { letter-spacing: .21em; font-size: 10px; }
-      .overline { letter-spacing: .2em; }
-      h1 { font-size: clamp(59px, 13.2vw, 102px); }
-      .tagline { letter-spacing: .12em; margin-top: 20px; }
-      .hero { padding-top: 45px; padding-bottom: 55px; }
-      .bottom { padding-left: 20px; padding-right: 20px; }
-      .fineprint span + span::before { display: none; }
-    }
-    @media (max-height: 680px) {
-      .showcase { min-height: 700px; }
-    }
-    @media (prefers-reduced-motion: no-preference) {
-      .hero { animation: appear .9s ease both; }
-      @keyframes appear { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
-    }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070b17">
+<meta name="description" content="Grand Coast Outlaws: an ambitious open-world multiplayer crime game in early development by Blackspur Games. Explore the vision, concept gallery and public roadmap.">
+<meta property="og:title" content="Grand Coast Outlaws | Blackspur Games"><meta property="og:description" content="One coast. Two sides of the law. A new open-world multiplayer project in development.">
+<meta property="og:image" content="assets/gco-downtown-concept.svg"><meta property="og:type" content="website">
+<title>Grand Coast Outlaws | Blackspur Games</title><link rel="icon" type="image/svg+xml" href="assets/blackspur-b-concept.svg">
+<style>
+:root{color-scheme:dark;--ink:#070b17;--paper:#f7f5fb;--muted:#adb7c9;--pink:#ff4099;--cyan:#77dfea;--border:rgba(220,230,255,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font:16px/1.65 Inter,"Segoe UI",Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--cyan);outline-offset:5px}img{max-width:100%;display:block}::selection{background:var(--pink);color:#fff}
+.skip{position:absolute;top:-80px;left:15px;padding:10px;background:#fff;color:#000;z-index:100}.skip:focus{top:15px}
+.nav{position:absolute;z-index:5;left:0;right:0;top:0;min-height:82px;display:flex;justify-content:space-between;align-items:center;gap:25px;padding:18px max(24px,calc((100vw - 1380px)/2));background:linear-gradient(#070b17e8,#070b1755)}
+.brand{display:flex;align-items:center;gap:13px;text-transform:uppercase;letter-spacing:.24em;font-size:12px;font-weight:800;white-space:nowrap}.brand img{width:43px;height:43px;border-radius:10px}
+.navlinks{display:flex;flex-wrap:wrap;gap:24px;align-items:center}.navlinks a{font-size:12px;text-transform:uppercase;font-weight:800;letter-spacing:.15em;color:#dce0ea}.navlinks a:hover,.footer a:hover{color:var(--pink)}.navlinks .nav-cta{border:1px solid var(--pink);padding:10px 16px;color:#fff}
+.hero{min-height:790px;min-height:100svh;display:grid;align-items:center;position:relative;isolation:isolate;background:#142034 url("assets/coastal-city-concept.svg") center center/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#060912d9 2%,#070c189e 42%,#0d142122 100%),linear-gradient(0deg,#070b17 0%,#07112422 65%,#050712a6 100%)}
+.hero-content{width:min(1320px,calc(100% - 48px));margin:100px auto 75px}.eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;font-weight:800;color:#d1d8e9}.eyebrow i{display:inline-block;width:28px;height:2px;background:var(--pink);vertical-align:middle;margin-right:12px}
+.hero h1{max-width:1040px;font-size:clamp(68px,10.3vw,166px);line-height:.8;letter-spacing:-.085em;margin:30px 0;font-weight:1000;text-shadow:0 10px 30px #02040b99;text-transform:uppercase}.hero h1 span{display:block}.hero h1 .last{background:linear-gradient(100deg,#fff 4%,#ffb1d2 22%,#ff3d93 70%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:610px;font-size:clamp(18px,2.1vw,25px);font-weight:550;line-height:1.5}.hero-actions,.section-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:51px;padding:12px 21px;border:1px solid #ced2e265;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:800;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-3px);background:#ffffff15}.btn.primary{background:var(--pink);border-color:var(--pink);color:#130713}.btn.primary:hover{background:#ff7fb6}.note{font-size:12px;color:#d0d2dc;max-width:630px;line-height:1.5;margin-top:24px}
+.kickerbar{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:#0e1321}.kickerbar div{padding:26px 18px;border-right:1px solid var(--border);text-align:center}.kickerbar strong{display:block;font-size:18px;line-height:1.3;font-weight:850;letter-spacing:.04em}.kickerbar small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;font-size:10px;margin-top:5px}
+.section{max-width:1320px;margin:auto;padding:110px 24px}.section-label{color:var(--pink);font-size:12px;letter-spacing:.25em;text-transform:uppercase;font-weight:900}.heading{font-size:clamp(39px,6vw,77px);line-height:1.03;letter-spacing:-.055em;text-transform:uppercase;max-width:960px;margin:14px 0 22px}.subhead{font-size:18px;color:var(--muted);max-width:820px;margin:0 0 32px}
+.overview{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.overview img{aspect-ratio:16/10;object-fit:cover;width:100%;border:1px solid var(--border)}.overview .heading{font-size:clamp(38px,4.2vw,64px)}
+.gallery-section{background:#0c111f;border-block:1px solid var(--border)}.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.visual{background:#111b2c;border:1px solid var(--border);overflow:hidden}.visual img{width:100%;aspect-ratio:16/9;object-fit:cover}.visual .visual-info{padding:23px}.visual h3{margin:0 0 5px;text-transform:uppercase;letter-spacing:.08em;font-size:20px}.visual p{margin:0;color:var(--muted);font-size:14px}.stamp{display:inline-block;text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:#ffd8e7;border:1px solid #ff5ca258;padding:4px 9px;margin-bottom:9px}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{padding:30px;border:1px solid var(--border);background:linear-gradient(145deg,#141b2b,#090e19);min-height:205px}.feature .index{color:var(--pink);font-weight:900;letter-spacing:.16em}.feature h3{text-transform:uppercase;letter-spacing:.03em;font-size:20px;margin:12px 0}.feature p{font-size:14px;color:var(--muted);margin:0}
+.roadmap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.roadmap ol{margin:0;padding:0;list-style:none;border-top:1px solid var(--border)}.roadmap li{padding:22px 0;border-bottom:1px solid var(--border);display:flex;gap:18px}.roadmap li b{color:var(--pink);font-size:13px}.roadmap li strong{display:block;text-transform:uppercase;font-size:16px}.roadmap li small{display:block;color:var(--muted);line-height:1.5}.roadmap a{text-decoration:underline;text-underline-offset:4px}
+.banner{background:linear-gradient(115deg,#320f31,#10142a 60%,#10313b);border-block:1px solid var(--border);text-align:center}.banner .heading{margin-left:auto;margin-right:auto}.banner .section-actions{justify-content:center}
+.footer{max-width:1320px;margin:auto;padding:44px 24px 60px;border-top:1px solid var(--border);display:flex;gap:24px;justify-content:space-between;flex-wrap:wrap;align-items:center}.footer small{color:var(--muted)}.footer nav{display:flex;gap:20px;flex-wrap:wrap;font-size:12px;text-transform:uppercase;letter-spacing:.1em}
+@media(max-width:900px){.nav{position:relative;background:#0b101e;padding:16px 24px}.navlinks{gap:13px}.hero{min-height:700px}.hero-content{margin:65px auto}.kickerbar{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr)}.overview,.roadmap{grid-template-columns:1fr;gap:35px}.feature-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:590px){.nav{display:block}.brand{margin-bottom:14px}.navlinks{gap:12px}.navlinks a{font-size:10px}.navlinks .nav-cta{padding:7px}.hero{min-height:610px}.hero-content{margin:50px auto}.hero h1{font-size:clamp(57px,14vw,88px)}.lead{font-size:17px}.section{padding:70px 20px}.kickerbar strong{font-size:15px}.gallery-grid,.feature-grid{grid-template-columns:1fr}.heading{font-size:40px}.footer{padding:35px 20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
 </head>
 <body>
-  <main class="showcase">
-    <header class="topbar"><div class="studio">BLACKSPUR <strong>ENTERTAINMENT</strong></div></header>
-    <section class="hero" aria-labelledby="game-title">
-      <p class="overline">A new open-world multiplayer project</p>
-      <h1 id="game-title"><span>Grand Coast</span><span>Outlaws</span></h1>
-      <p class="tagline">One city. Two sides of the law.</p>
-    </section>
-    <footer class="bottom">
-      <strong class="coming">Coming Soon!</strong>
-      <div class="rule" aria-hidden="true"></div>
-      <h2 class="about-heading">About the game</h2>
-      <p class="description">Grand Coast Outlaws (GCO) is an ambitious open-world multiplayer game in development with Unreal Engine 5 and C++. Explore the vision of a sprawling coastal metropolis where police and outlaws collide, with vehicles, pursuits, heists and the freedom to forge your own story.</p>
-      <div class="fineprint">
-        <span>© 2026 Blackspur Entertainment</span>
-        <span>In development — release date not announced</span>
-        <span>Illustrated concept background — not gameplay footage</span>
-      </div>
-    </footer>
-  </main>
-</body>
-</html>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><a href="#" class="brand"><img src="assets/blackspur-b-concept.svg" alt=""><span>BLACKSPUR GAMES</span></a><nav class="navlinks" aria-label="Primary navigation"><a href="#game">The game</a><a href="#world">The world</a><a href="#features">Features</a><a href="#development">Development</a><a class="nav-cta" href="#gallery">Media gallery</a></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="title"><div class="hero-content"><div class="eyebrow"><i></i>Blackspur Games presents · In development</div><h1 id="title"><span>Grand Coast</span><span class="last">Outlaws</span></h1><p class="lead">Enter the other side of paradise. A coastal world of ambition, pursuit and the choices that define an outlaw.</p><div class="hero-actions"><a class="btn primary" href="#world">Explore the world →</a><a class="btn" href="#development">Development status</a></div><p class="note">Grand Coast Outlaws is an early-stage Unreal Engine 5 / C++ multiplayer project. Visuals on this site are concept illustrations, not captured gameplay. Release date not announced.</p></div></section>
+<div class="kickerbar" aria-label="Project at a glance"><div><strong>30 × 30 km</strong><small>Long-term world ambition</small></div><div><strong>Police & Outlaws</strong><small>Planned multiplayer paths</small></div><div><strong>UE5 + C++</strong><small>Prototype technology</small></div><div><strong>Early prototype</strong><small>Public development stage</small></div></div>
+<section class="section overview" id="game"><div><div class="section-label">01 / The vision</div><h2 class="heading">One coast.<br>Two sides<br>of the law.</h2><p class="subhead">GCO imagines a connected coastal metropolis where a routine patrol can become a high-speed pursuit, and a quiet night can turn into a citywide manhunt. Players will eventually choose their place in a world shaped by police work, criminal crews, commerce and competition.</p><p style="color:var(--muted)">The first priority is a small, testable district and a complete multiplayer gameplay loop—not claiming that the entire envisioned city already exists.</p><div class="section-actions"><a class="btn" href="docs/ROADMAP.md">View public roadmap →</a></div></div><img src="assets/gco-downtown-concept.svg" loading="lazy" width="1600" height="900" alt="Original concept illustration of downtown Grand Coast at dusk; not a game screenshot"></section>
+<section class="gallery-section" id="world"><div class="section"><div class="section-label">02 / Discover the coast</div><h2 class="heading">From neon downtown<br>to the edge of the ocean.</h2><p class="subhead">The envisioned world reaches beyond downtown: sunlit coastlines, industrial shipping districts, islands and highways. These are artistic studies for the planned environment, not finished in-game locations.</p><div class="gallery-grid" id="gallery">
+<article class="visual"><img src="assets/gco-downtown-concept.svg" loading="lazy" width="1600" height="900" alt="Illustrated downtown street at dusk with sports car and skyline"><div class="visual-info"><span class="stamp">Concept art</span><h3>Downtown</h3><p>Vertical skylines, business districts, nighttime pursuits and dense streets.</p></div></article>
+<article class="visual"><img src="assets/gco-coast-concept.svg" loading="lazy" width="1600" height="900" alt="Illustrated aerial view of islands, turquoise shore and a boat"><div class="visual-info"><span class="stamp">Concept art</span><h3>Coastline & islands</h3><p>Shore roads, beaches and island routes across open water.</p></div></article>
+<article class="visual"><img src="assets/gco-harbor-concept.svg" loading="lazy" width="1600" height="900" alt="Illustrated industrial dock and airport with cranes and aircraft"><div class="visual-info"><span class="stamp">Concept art</span><h3>Harbor & airfield</h3><p>Industrial infrastructure, guarded areas and new mission possibilities.</p></div></article>
+</div><div class="section-actions"><a href="docs/MEDIA.md" class="btn">Media library & labels →</a></div></div></section>
+<section class="section" id="features"><div class="section-label">03 / Gameplay direction</div><h2 class="heading">Make your move.<br>Live with the heat.</h2><p class="subhead">The following experiences are design goals. Feature completion will be published only after playable evidence and testing.</p><div class="feature-grid">
+<article class="feature"><div class="index">01 —</div><h3>Police operations</h3><p>Respond to incidents, patrol urban districts, coordinate with other players and stop escape attempts.</p></article>
+<article class="feature"><div class="index">02 —</div><h3>Criminal crews</h3><p>Plan high-risk robberies, move through the city and deal with the consequences of a rising wanted level.</p></article>
+<article class="feature"><div class="index">03 —</div><h3>Heists & objectives</h3><p>Bank, jewelry and commercial robberies are part of the intended vertical-slice gameplay progression.</p></article>
+<article class="feature"><div class="index">04 —</div><h3>Vehicles & pursuits</h3><p>Road-based mobility, different vehicle classes and police chases are core to the vision.</p></article>
+<article class="feature"><div class="index">05 —</div><h3>World systems</h3><p>Day-night atmosphere, interaction-rich districts and an economy are planned for later milestones.</p></article>
+<article class="feature"><div class="index">06 —</div><h3>Online progression</h3><p>Cooperative and competing players, role-specific paths and persistent systems remain development targets.</p></article>
+</div></section>
+<section class="gallery-section" id="development"><div class="section roadmap"><div><div class="section-label">04 / Building Grand Coast</div><h2 class="heading">The road to<br>playable.</h2><p class="subhead">The Unreal Engine 5 / C++ foundation, prototype menu and limited editor multiplayer tests are documented internally. Full production networking, finished gameplay, and the expanded world are not yet validated.</p><p>Transparency matters: public milestones distinguish reported prototype checks from independently validated releases.</p><div class="section-actions"><a class="btn primary" href="docs/DEVELOPMENT_STATUS.md">Read development status →</a></div></div><ol><li><b>01</b><div><strong>Unreal foundation</strong><small>Initial internal compilation, module and editor checks reported.</small></div></li><li><b>02</b><div><strong>Playable district</strong><small>In progress: small connected area, separate clients, playable objective.</small></div></li><li><b>03</b><div><strong>Dedicated server</strong><small>Packaging, remote connection and performance validation pending.</small></div></li><li><b>04</b><div><strong>First gameplay vertical slice</strong><small>Vehicles, pursuit, heist and economy loops planned.</small></div></li><li><b>05</b><div><strong>World expansion</strong><small>More locations, content, optimization and testing planned.</small></div></li></ol></div></section>
+<section class="banner"><div class="section"><div class="section-label">Blackspur Games</div><h2 class="heading">Every empire begins<br>with a first district.</h2><p class="subhead" style="margin-left:auto;margin-right:auto">Follow the public project record, technical goals and collaboration opportunities as Grand Coast Outlaws takes shape.</p><div class="section-actions"><a class="btn primary" href="README.md">Explore the repository</a><a class="btn" href="docs/PARTNER_OVERVIEW.md">Partnership information</a></div></div></section>
+</main><footer class="footer"><div class="brand"><img src="assets/blackspur-b-concept.svg" alt="">BLACKSPUR GAMES</div><small>© 2026 Blackspur Entertainment · Concept artwork, not gameplay footage · Release date TBA</small><nav aria-label="Footer links"><a href="docs/ROADMAP.md">Roadmap</a><a href="docs/MEDIA.md">Media</a><a href="docs/UPDATES.md">Updates</a><a href="https://github.com/BlackspurENT/GRAND-COAST-OUTLAWS">GitHub</a></nav></footer>
+</body></html>
