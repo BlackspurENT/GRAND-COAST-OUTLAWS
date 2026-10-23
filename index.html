@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070b17">
 <meta name="description" content="Grand Coast Outlaws: an ambitious open-world multiplayer crime game in early development by Blackspur Games. Explore the vision, concept gallery and public roadmap.">
 <meta property="og:title" content="Grand Coast Outlaws | Blackspur Games"><meta property="og:description" content="One coast. Two sides of the law. A new open-world multiplayer project in development.">
-<meta property="og:image" content="assets/coastal-city-concept.svg"><meta property="og:type" content="website">
+<meta property="og:image" content="assets/gco-official-cover.webp"><meta property="og:type" content="website">
 <title>Grand Coast Outlaws | Blackspur Games</title>
 <style>
 :root{color-scheme:dark;--ink:#070b17;--paper:#f7f5fb;--muted:#adb7c9;--pink:#ff4099;--cyan:#77dfea;--border:rgba(220,230,255,.14)}
@@ -30,13 +30,24 @@
 @media(max-width:900px){.nav{position:relative;background:#0b101e;padding:16px 24px}.navlinks{gap:13px}.hero{min-height:700px}.hero-content{margin:65px auto}.kickerbar{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr)}.overview,.roadmap{grid-template-columns:1fr;gap:35px}.feature-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:590px){.nav{display:block}.brand{margin-bottom:14px}.navlinks{gap:12px}.navlinks a{font-size:10px}.navlinks .nav-cta{padding:7px}.hero{min-height:610px}.hero-content{margin:50px auto}.hero h1{font-size:clamp(57px,14vw,88px)}.lead{font-size:17px}.section{padding:70px 20px}.kickerbar strong{font-size:15px}.gallery-grid,.feature-grid{grid-template-columns:1fr}.heading{font-size:40px}.footer{padding:35px 20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+/* Approved artwork: show the entire panorama with no cropping or duplicated title. */
+.hero{display:block;min-height:0;background:#070b17!important;padding-top:0}
+.hero::before{display:none}
+.hero-image{display:block;width:100%;height:auto;aspect-ratio:1920/819;object-fit:contain}
+.hero-content{width:min(1320px,calc(100% - 48px));margin:0 auto;padding:30px 0 55px}
+.hero h1{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0}
+.hero .eyebrow{color:#ff9ac7}
+.hero .lead{max-width:950px}
+.hero .note{max-width:950px}
+@media(max-width:900px){.hero{min-height:0}.hero-content{margin:0 auto;padding:24px 0 44px}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><a href="#" class="brand"><span>BLACKSPUR GAMES</span></a><nav class="navlinks" aria-label="Primary navigation"><a href="#game">The game</a><a href="#world">The world</a><a href="#features">Features</a><a href="#development">Development</a><a class="nav-cta" href="docs/MEDIA.md">Media status</a></nav></header>
 <main id="main">
-<section class="hero" aria-labelledby="title"><div class="hero-content"><div class="eyebrow"><i></i>Blackspur Games presents · In development</div><h1 id="title"><span>Grand Coast</span><span class="last">Outlaws</span></h1><p class="lead">Enter the other side of paradise. A coastal world of ambition, pursuit and the choices that define an outlaw.</p><div class="hero-actions"><a class="btn primary" href="#world">Explore the world →</a><a class="btn" href="#development">Development status</a></div><p class="note">Grand Coast Outlaws is an early-stage Unreal Engine 5 / C++ multiplayer project. Visuals on this site are concept illustrations, not captured gameplay. Release date not announced.</p></div></section>
+<section class="hero" aria-labelledby="title"><img class="hero-image" src="assets/gco-official-cover.webp" alt="Grand Coast Outlaws promotional concept artwork: neon waterfront skyline, a spired skyscraper by the bay, illuminated fountains and a GCO sports car" width="1920" height="819"><div class="hero-content"><div class="eyebrow"><i></i>Blackspur Games presents · In development</div><h1 id="title"><span>Grand Coast</span><span class="last">Outlaws</span></h1><p class="lead">Enter the other side of paradise. A coastal world of ambition, pursuit and the choices that define an outlaw.</p><div class="hero-actions"><a class="btn primary" href="#world">Explore the world →</a><a class="btn" href="#development">Development status</a></div><p class="note">Grand Coast Outlaws is an early-stage Unreal Engine 5 / C++ multiplayer project. Visuals on this site are concept illustrations, not captured gameplay. Release date not announced.</p></div></section>
 <div class="kickerbar" aria-label="Project at a glance"><div><strong>30 × 30 km</strong><small>Long-term world ambition</small></div><div><strong>Police & Outlaws</strong><small>Planned multiplayer paths</small></div><div><strong>UE5 + C++</strong><small>Prototype technology</small></div><div><strong>Early prototype</strong><small>Public development stage</small></div></div>
 <section class="section overview" id="game"><div><div class="section-label">01 / The vision</div><h2 class="heading">One coast.<br>Two sides<br>of the law.</h2><p class="subhead">GCO imagines a connected coastal metropolis where a routine patrol can become a high-speed pursuit, and a quiet night can turn into a citywide manhunt. Players will eventually choose their place in a world shaped by police work, criminal crews, commerce and competition.</p><p style="color:var(--muted)">The first priority is a small, testable district and a complete multiplayer gameplay loop—not claiming that the entire envisioned city already exists.</p><div class="section-actions"><a class="btn" href="docs/ROADMAP.md">View public roadmap →</a></div></div></section>
 <section class="gallery-section" id="world"><div class="section"><div class="section-label">02 / Discover the coast</div><h2 class="heading">From neon downtown<br>to the edge of the ocean.</h2><p class="subhead">The envisioned world reaches beyond downtown: sunlit coastlines, industrial shipping districts, islands and highways. These are planned regions and atmosphere directions, not finished in-game locations.</p><div class="gallery-grid" id="gallery">
