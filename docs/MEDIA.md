@@ -1,32 +1,14 @@
-# GRAND COAST OUTLAWS — MEDIA & CONCEPT GALLERY
+# GRAND COAST OUTLAWS — MEDIA STATUS
 
-The gallery below contains **original illustrated project concept artworks**. These are **NOT screenshots from a running Unreal Engine build**. The work explores locations, atmosphere and presentation for Grand Coast Outlaws; it does not prove any game location, vehicle or mechanic is finished.
+The newly added downtown, coastline, harbor and stylized B graphics were withdrawn from the public repository. They do not represent approved GCO visuals.
 
-## Visual concepts in the public repository
+## Existing background illustration
 
-### Downtown / after dark
+![An earlier stylized coastal metropolis background, not gameplay](../assets/coastal-city-concept.svg)
 
-![Grand Coast downtown concept artwork](../assets/gco-downtown-concept.svg)
+This older SVG illustration predates the withdrawn visuals and remains solely as a **concept background**, not a game screenshot.
 
-A visual study of the imagined city's dense downtown, illuminated street corridors and late-night vehicle pursuits. **Type:** concept art.
-
-### Islands / coastline
-
-![Grand Coast islands and coastline concept artwork](../assets/gco-coast-concept.svg)
-
-An aerial visual study of coastal terrain, shore roads, water routes and islands. **Type:** concept art.
-
-### Harbor / airfield
-
-![Grand Coast industrial harbor and airfield concept artwork](../assets/gco-harbor-concept.svg)
-
-An industrial waterfront, cargo infrastructure and aviation silhouette. **Type:** concept art.
-
-### Initial skyline exploration
-
-![Grand Coast stylized coastal city concept artwork](../assets/coastal-city-concept.svg)
-
-An earlier illustrated background exploring coastal skylines at dusk. **Type:** concept art.
+**No verified in-engine screenshots have been published in this repository yet.** Additional visuals will be added only after the chosen assets are reviewed for release.
 
 ## What is not published here
 
