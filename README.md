@@ -12,7 +12,7 @@
   </p>
 </div>
 
-![Original stylized concept art showing the Grand Coast skyline by night, not gameplay footage](assets/coastal-city-concept.svg)
+![Grand Coast Outlaws — approved concept art showing the 900 km² world vision: a coastal metropolis, illuminated fountains, waterfront skyscraper and GCO sports car. This is artwork, not gameplay.](assets/gco-official-cover.webp)
 
 > **Grand Coast Outlaws (GCO)** is an independent, open-world action multiplayer game currently in **early Unreal Engine 5 / C++ prototype development**. All artwork on this page is labelled **concept art**, not actual gameplay. No public playable build or release date has been announced.
 
@@ -62,7 +62,7 @@ Those reports **do not** demonstrate a completed multiplayer game, finished heis
 
 ## MEDIA & COMMUNITY
 
-The repository retains an earlier illustrative coastal-city background under [`assets/`](assets/). No verified public gameplay screenshot set is available yet. New project-approved imagery, test videos and demos will be published separately when reviewed.
+The main image above is the project-approved **Grand Coast Outlaws** promotional concept artwork, available as [`assets/gco-official-cover.webp`](assets/gco-official-cover.webp) (1920 × 819 px). It illustrates an artistic vision, not actual game footage. No verified public gameplay screenshot set is available yet. New project-approved imagery, test videos and demos will be published separately when reviewed.
 
 - [Media publication status and guidelines](docs/MEDIA.md)
 - [Updates and milestone history](docs/UPDATES.md)
