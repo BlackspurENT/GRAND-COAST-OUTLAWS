@@ -2,13 +2,13 @@
 
 The newly added downtown, coastline, harbor and stylized B graphics were withdrawn from the public repository. They do not represent approved GCO visuals.
 
-## Existing background illustration
+## Approved promotional cover art
 
-![An earlier stylized coastal metropolis background, not gameplay](../assets/coastal-city-concept.svg)
+![Grand Coast Outlaws: approved concept cover featuring a sprawling coastal city, Burj Khalifa-inspired tower, colorful LED fountains and a GCO sports car](../assets/gco-official-cover.webp)
 
-This older SVG illustration predates the withdrawn visuals and remains solely as a **concept background**, not a game screenshot.
+This **1920 × 819 px** illustration was selected for the project's GitHub showcase on 23 October 2026. It represents the long-term visual direction of the planned world and is **concept art, not a screenshot of the game**.
 
-**No verified in-engine screenshots have been published in this repository yet.** Additional visuals will be added only after the chosen assets are reviewed for release.
+**No verified in-engine screenshots have been published in this repository yet.** Additional gameplay captures will be published only after review.
 
 ## What is not published here
 
