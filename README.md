@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="assets/blackspur-b-concept.svg" alt="Blackspur Games concept monogram" width="88">
   <h1>GRAND COAST OUTLAWS</h1>
   <p><strong>ENTER THE OTHER SIDE OF PARADISE.</strong></p>
   <p>One coast. Two sides of the law. A multiplayer world in the making.</p>
@@ -23,15 +22,13 @@ Picture a fictional coastal metropolis with dense business districts, nightlife,
 
 The core fantasy is a living online world where police officers, criminal crews and other players operate in the same city. A bank alarm might spark a pursuit; a vehicle escape might cross into the harbor; a single decision might turn a quiet night into a multiplayer standoff. The team is approaching this ambition in smaller, testable milestones.
 
-### Explore the visual direction
+### Planned world regions
 
-| Downtown at dusk | Coastline & islands | Harbor & airfield |
-| :---: | :---: | :---: |
-| ![Downtown concept art](assets/gco-downtown-concept.svg) | ![Coastal concept art](assets/gco-coast-concept.svg) | ![Harbor concept art](assets/gco-harbor-concept.svg) |
-| Neon city streets, towers and pursuits | Beaches, open water and island routes | Shipping terminals, guarded infrastructure and airfields |
-| **Concept art — not gameplay** | **Concept art — not gameplay** | **Concept art — not gameplay** |
+- **Downtown:** business districts, dense city streets and night-time pursuits.
+- **Coastline & islands:** beaches, island roads and water-based connections.
+- **Harbor & airfield:** industrial infrastructure and future objective locations.
 
-[Full media guide and publication policy](docs/MEDIA.md)
+These are setting proposals rather than verified in-game locations. [Media publication status](docs/MEDIA.md).
 
 ## THE GAMEPLAY VISION
 
@@ -65,9 +62,9 @@ Those reports **do not** demonstrate a completed multiplayer game, finished heis
 
 ## MEDIA & COMMUNITY
 
-Three original illustrated studies and a stylized coastal city background are included under [`assets/`](assets/). They illustrate **art direction**, not actual gameplay or a final world map. Verified in-engine images, test videos and demos will be published separately when reviewed.
+The repository retains an earlier illustrative coastal-city background under [`assets/`](assets/). No verified public gameplay screenshot set is available yet. New project-approved imagery, test videos and demos will be published separately when reviewed.
 
-- [Media gallery — with accurate labels](docs/MEDIA.md)
+- [Media publication status and guidelines](docs/MEDIA.md)
 - [Updates and milestone history](docs/UPDATES.md)
 - [Website showcase](index.html)
 
