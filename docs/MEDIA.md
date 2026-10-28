@@ -1,35 +1,42 @@
-# GRAND COAST OUTLAWS — MEDIA STATUS
+# Grand Coast Outlaws — Media Information
 
-The newly added downtown, coastline, harbor and stylized B graphics were withdrawn from the public repository. They do not represent approved GCO visuals.
+**Studio:** Blackspur Games / Blackspur Entertainment<br>
+**Project:** Grand Coast Outlaws (GCO)<br>
+**Official website:** [blackspurgames.pl](https://blackspurgames.pl)<br>
+**Media enquiries:** [kontakt@blackspurgames.pl](mailto:kontakt@blackspurgames.pl)
 
-## Approved promotional cover art
+## Project description
 
-![Grand Coast Outlaws: approved concept cover featuring a sprawling coastal city, Burj Khalifa-inspired tower, colorful LED fountains and a GCO sports car](../assets/gco-official-cover.webp)
+Grand Coast Outlaws is an independent open-world multiplayer action project in early Unreal Engine 5 / C++ development. Set in a fictional coastal metropolis, its design direction explores police operations, criminal crews, vehicle pursuits and shared player objectives.
 
-This **1920 × 819 px** illustration was selected for the project's GitHub showcase on 23 October 2026. It represents the long-term visual direction of the planned world and is **concept art, not a screenshot of the game**.
+No public playable build, gameplay trailer or release date has been announced.
 
-**No verified in-engine screenshots have been published in this repository yet.** Additional gameplay captures will be published only after review.
+## Approved showcase artwork
 
-## What is not published here
+![Grand Coast Outlaws promotional concept illustration of a neon coastal city, waterfront tower, fountains and sports car.](../assets/gco-official-cover.webp)
 
-The project has discussed menu layouts, brand animation, panoramas and cinematic illustrations in development conversations. They are not presented here as verified screenshots or live gameplay. Publication of external render files requires an intentional selection, a transferable approved image file and a license/privacy check.
+| Asset | Details |
+| --- | --- |
+| File | [gco-official-cover.webp](../assets/gco-official-cover.webp) |
+| Dimensions | 1920 × 819 pixels |
+| Category | Promotional concept artwork |
+| Selected for this showcase | 23 October 2026 |
+| Suggested caption | Grand Coast Outlaws — promotional concept art, Blackspur Games. Not captured gameplay. |
 
-**Confirmed public in-engine screenshot gallery:** not yet published.  
-**Public game build / downloadable demo:** not available.  
-**Official gameplay trailer:** not announced.
+This illustration presents the project's artistic direction. It does not establish a finished map, implemented landmark or current gameplay quality. For publication enquiries or additional materials, contact the studio; this page does not grant a new asset licence.
 
-## Media categories
+## Gameplay and development captures
 
-| Type | What it means | Publication rule |
-| --- | --- | --- |
-| Concept art | Illustration, design exploration or previsualization | Must say `concept art` |
-| UI concept | Proposed menu or HUD appearance | Must not imply every button or feature is implemented |
-| In-engine prototype | Actual frame captured from a running UE build | Record capture date, build and prototype status |
-| Development capture | Actual editor or test-session screen | Remove private debug data and identify WIP state |
-| Gameplay demo | Actual recorded interaction with a running game | Describe test scope and known limitations |
+No verified in-engine screenshot gallery is currently published in this repository. Future material will identify its context:
 
-## Before adding real images
+| Label | Meaning |
+| --- | --- |
+| Concept art | Illustration or visual exploration |
+| UI concept | Proposed interface appearance |
+| In-engine prototype | Frame captured from a running prototype build |
+| Development capture | Editor view or test-session capture |
+| Gameplay demo | Recorded interaction with a running build, with test scope described |
 
-Verify ownership and permitted distribution; check embedded metadata and visible private information; compress assets for web delivery; and preserve accurate labels. When real gameplay screenshots are ready, they will appear here in a separate section rather than replacing concept labels.
+Only project-approved assets should be added to this showcase. Record capture date and build context for development footage, remove private information and retain accurate labels.
 
-[Back to project overview](../README.md) · [Development status](DEVELOPMENT_STATUS.md)
+[Project overview](../README.md) · [Development status](DEVELOPMENT_STATUS.md) · [Document index](README.md)

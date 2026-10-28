@@ -2,6 +2,22 @@
 
 This log records public-facing, verifiable progress. It is not a full changelog of the private development repository, and commits here do not imply new gameplay is ready.
 
+## 28 October 2026 — Partner-facing project presentation
+
+- Reworked the project overview with a concise introduction, current-stage fact sheet and direct studio contact.
+- Connected the public showcase to the official [Blackspur Games website](https://blackspurgames.pl).
+- Added a [document index](README.md) for business, technical and media readers.
+- Updated the [partner overview](PARTNER_OVERVIEW.md) with a staged pilot proposal and concrete discussion points.
+- Consolidated [media information](MEDIA.md), approved-artwork details and publication context.
+- Corrected the repository's HTML showcase links to open rendered GitHub documents.
+
+This is a presentation and documentation update. It does not announce new completed gameplay or change the previously reported engineering snapshot.
+
+## 23 October 2026 — Approved promotional artwork
+
+- Published the project-selected 1920 × 819 pixel promotional cover in the README and HTML showcase.
+- Identified the illustration as concept art rather than a gameplay capture.
+
 ## 12 October 2026 — Public development showcase
 
 **Published**
